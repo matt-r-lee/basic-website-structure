@@ -1,0 +1,67 @@
+/* --- Base Styles --- */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  color: darkblue;
+}
+
+.primary-content {
+  flex: 1;
+  margin: auto;
+}
+
+.main-nav a{
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-nav li{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.main-footer {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* --- Media Queries --- */
+@media (min-width: 769px) {
+.main-header, .main-nav {
+  display:flex
+}
+
+.main-header {
+  justify-content: space-around;
+}
+
+.main-nav {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.primary-content {
+  width: 70%;
+}
+
+}
